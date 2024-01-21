@@ -5,8 +5,11 @@ import { useAuth } from '#imports'
 const { signIn, token, data, status, signOut } = useAuth()
 
 const handleLogout = () => {
-    signOut().then(() => {
-        navigateTo('/login')
+    signOut({
+        callbackUrl: '/',
+        redirect: false,
+    }).then(() => {
+        navigateTo('/')
   })
 }
 
@@ -30,7 +33,7 @@ const handleLogout = () => {
                             Home
                         </NuxtLink>
                     </li>
-                    <li v-if="status === 'authenticated'">
+                    <li v-if="data">
                         <NuxtLink to="/stream">
                         
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">

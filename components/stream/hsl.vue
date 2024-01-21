@@ -1,6 +1,6 @@
 <template>
   <div class="stream-container w-full">
-    <video id="video" controls autoplay class="video-js vjs-default-skin w-full h-full"></video>
+    <video id="video" controls autoplay class="video-js vjs-default-skin w-full "></video>
   </div>
 </template>
 
@@ -30,6 +30,6 @@ onMounted(() => {
 
 <style scoped>
 .stream-container {
-  width: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+  width: 100%;
 }
 </style>

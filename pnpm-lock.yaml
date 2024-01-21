@@ -8,6 +8,9 @@ dependencies:
   '@heroicons/vue':
     specifier: ^2.1.1
     version: 2.1.1(vue@3.4.15)
+  hls.js:
+    specifier: ^1.5.1
+    version: 1.5.1
 
 devDependencies:
   '@nuxtjs/tailwindcss':
@@ -3213,6 +3216,10 @@ packages:
     dependencies:
       function-bind: 1.1.2
     dev: true
+
+  /hls.js@1.5.1:
+    resolution: {integrity: sha512-SsUSlpyjOGnwBhVrVEG6vRFPU2SAJ0gUqrFdGeo7YPbOC0vuWK0TDMyp7n3QiaBC/Wkic771uqPnnVdT8/x+3Q==}
+    dev: false
 
   /hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}

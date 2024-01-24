@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import { definePageMeta } from '#imports'
+
+definePageMeta({
+  auth: false
+})
+</script>
+
+
 <template>
   <div class="flex flex-col items-center justify-center min-h-screen bg-base-200 text-base-content animate-fade-in-down">
     <header class="mb-8 text-center">
@@ -15,13 +24,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { definePageMeta } from '#imports'
-
-definePageMeta({
-  auth: false
-})
-</script>
 
 <style>
 @keyframes fade-in {

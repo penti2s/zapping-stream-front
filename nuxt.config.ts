@@ -17,9 +17,10 @@ export default defineNuxtConfig({
         getSession: { path: '/user' },
       },
       token: {
-        signInResponseTokenPointer: '/token'
+        signInResponseTokenPointer: '/token',
+        sameSiteAttribute: 'strict',
       },
-      sessionDataType: { id: 'string', email: 'string', name: 'string'}
+      sessionDataType: {}
     },
     session: {
       // Whether to refresh the session every time the browser window is refocused.
@@ -30,7 +31,12 @@ export default defineNuxtConfig({
     },
     globalAppMiddleware: {
       isEnabled: true
-    }
+    },
+    localStorage: {
+      prefix: 'auth.'
+    },
+    enableSessionRefreshPeriodically: 5000,
+    enableSessionRefreshOnWindowFocus: true,
   }
 })
 
